@@ -20,11 +20,28 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.min.js" integrity="sha512-g16L6hyoieygYYZrtuzScNFXrrbJo/lj9+1AYsw+0CYYYZ6lx5J3x9Yyzsm+D37/7jMIGh0fDqdvyYkNWbuYuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 	</head>
 
 	<body>
 
 		<div class="reveal">
+
+			<div id="viewpdf">
+
+			</div>
+
+			<script>
+
+				var viewpfd = $("#viewpdf")
+
+				PDFObject.embed("pdf/page_2.pdf", viewpdf)
+
+			</script>
+			
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
