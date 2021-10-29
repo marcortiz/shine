@@ -59,10 +59,6 @@ A failed embed will not have dimensions specified, so you don't see an oddly lar
 </head>
 
 <body>
-<h1>PDFObject Example: Forcing PDFObject to use an iframe</h1>
-
-<p>An <code>&lt;iframe&gt;</code> will be used instead of the <code>&lt;embed&gt;</code> element.</p>
-
 <div id="results" class="hidden"></div>
 
 <div id="pdf"></div>
@@ -72,7 +68,8 @@ A failed embed will not have dimensions specified, so you don't see an oddly lar
 <script src="https://unpkg.com/pdfobject@2.2.7/pdfobject.min.js"></script>
 <script>
 var options = { forceIframe: true };
-var myPDF = PDFObject.embed("https://pdfobject.com/pdf/sample-3pp.pdf", "#pdf", options);
+//var myPDF = PDFObject.embed("https://pdfobject.com/pdf/sample-3pp.pdf", "#pdf", options);
+var myPDF = PDFObject.embed("https://drive.google.com/file/d/1pxkSN-er80VS4tA0q8avxPTXsL3YVuTc/view", "#pdf", options);
 
 var el = document.querySelector("#results");
 el.setAttribute("class", (myPDF) ? "success" : "fail");
