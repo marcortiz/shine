@@ -75,5 +75,15 @@ el.setAttribute("class", (myPDF) ? "success" : "fail");
 el.innerHTML = (myPDF) ? "PDFObject was successful!" : "Uh-oh, the embed didn't work.";
 </script>
 
+<script type="text/javascript">
+    $(function () {
+        document.addEventListener("pagerendered", function (e) {
+            $('#print').hide();
+            $('#viewBookmark').hide();
+            $('#openFile').hide();
+        });
+    });
+</script>
+
 </body>
 </html>
